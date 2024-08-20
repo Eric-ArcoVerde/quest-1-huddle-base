@@ -1,16 +1,68 @@
-@media (max-width: 768px){
+@media (max-width: 1024px){
     body {
-        background: hsl(257, 40%, 49%) url(../images/bg-mobile.svg) no-repeat; 
-        background-size: cover;
-        /* width: 100vw; */
+        padding: 20px 30px;
     }
     .principal {
-        flex-direction: column;
-        text-align: center;
+        margin-top: 20px;
     }
 
     .principal .paineis{
-        width: 550px;
+        width: 500px;
+    }
+}
+
+@media (max-width: 768px){
+    body{
+        background: hsl(257, 40%, 49%) url(../images/bg-mobile.svg) no-repeat; 
+        background-size: cover;
+        padding-top: 40px;
+    }
+
+    .principal {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
     }
     
+    .principal .paineis{
+        width: 700px;
+    }
+    
+    .principal .container-texto{
+        margin-top: 50px;
+        gap: 25px;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .rodape{
+        padding: 50px 0px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 425px){
+    body{
+        padding: 30px 40px;
+    }
+
+    .principal{
+        margin-top: 50px;
+    }
+
+    .principal .paineis{
+        width: 345px;
+    }
+}
+
+@media (max-width: 375px){
+    .principal .paineis{
+        width: 295px;
+    }
+}
+
+@media (max-width: 320px){
+    .principal .paineis{
+        width: 260px;
+    }
 }
